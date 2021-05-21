@@ -17,40 +17,97 @@
       autocomplete="off"
       class="userContactForm"
     >
-      <h1>Contact form</h1>
-      <div class="mainInfo">
-        <label>
-          Please fill in your information and we'll be sending your
-          order
-        </label>
-        <label for="userName">You name</label>
-        <input id="userName" type="text" />
-        <input id="userSurname" type="text" />
+      <h1 class="formName">Contact form</h1>
 
-        <label for="userMail"></label>
-        <input id="userMail" type="email" />
+      <p>
+        Please fill in your information and we'll be sending your
+        order.
+      </p>
 
-        <label for="userPhone" requared>Phone *</label>
-        <input id="userPhone" type="tel" />
+      <div class="flexContainerMini name">
+        <label class="userNameLabel" for="userName">You name</label>
+        <input id="userName" type="text" placeholder="first name" />
+        <input id="userSurname" type="text" placeholder="last name" />
       </div>
 
-      <div class="userMassageData">
-        <label for="messageSubject"></label
-        ><label for="userTextMessage"></label>
+      <div class="flexContainerMini mail">
+        <label class="userMailLabel" for="userMail">Your email</label>
+        <input
+          class="userMail"
+          id="userMail"
+          type="email"
+          placeholder="your mail@mail.com"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+        />
+      </div>
 
+      <div class="flexContainerMini phone">
+        <label class="userPhoneLabel" for="userPhone" requared
+          >Phone *</label
+        >
+        <input
+          id="userPhone"
+          type="tel"
+          placeholder="000"
+          pattern=""
+        />
+        <input
+          id="userPhone"
+          type="tel"
+          placeholder="000"
+          pattern=""
+        />
+        <input
+          id="userPhone"
+          type="tel"
+          placeholder="0000"
+          pattern=""
+        />
+      </div>
+
+      <div class="flexContainerMini msub">
+        <label for="messageSubject">Message subject *</label>
         <select
           name="messageSubject"
           id="messageSubject"
           class="messageSubject"
-        ></select>
+        >
+          <option value="1">Lorem ipsum dolor sit amet.</option>
+          <option value="2">
+            Provident ab similique maxime est.
+          </option>
+          <option value="3">
+            Ex iusto veritatis cumque tenetur?
+          </option>
+          <option value="4">
+            Provident doloremque alias tempore laboriosam.
+          </option>
+          <option value="5">Esse ipsa eos optio similique!</option>
+          <option value="6">Ex quod quasi nisi aliquid.</option>
+          <option value="7">
+            Itaque necessitatibus saepe vero non.
+          </option>
+          <option value="8">Vel quam nam adipisci amet.</option>
+          <option value="9">
+            Nam consequatur aliquam numquam! Ad!
+          </option>
+          <option value="10">
+            Eaque asperiores rerum fugiat repudiandae!
+          </option>
+        </select>
+      </div>
 
+      <div class="flexContainerMini message">
+        <label for="userTextMessage"> Message *</label>
         <input
           id="userTextMessage"
           class="userTextMessage"
-          type="text"
+          type="textarea"
+          rows="7"
+          cols="30"
         />
       </div>
-      <input type="submit" />
+      <a class="submit" href="#"> Submit form</a>
     </form>
   </body>
 </html>
