@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Contact form</title>
+  </head>
+  <body>
+    <form
+      action="#"
+      method="POST"
+      autocomplete="off"
+      class="userContactForm"
+    >
+      <h1>Contact form</h1>
+      <div class="mainInfo">
+        <label>
+          Please fill in your information and we'll be sending your
+          order
+        </label>
+        <label for="userName">You name</label>
+        <input id="userName" type="text" />
+        <input id="userSurname" type="text" />
+
+        <label for="userMail"></label>
+        <input id="userMail" type="email" />
+
+        <label for="userPhone" requared>Phone *</label>
+        <input id="userPhone" type="tel" />
+      </div>
+
+      <div class="userMassageData">
+        <label for="messageSubject"></label
+        ><label for="userTextMessage"></label>
+
+        <select
+          name="messageSubject"
+          id="messageSubject"
+          class="messageSubject"
+        ></select>
+
+        <input
+          id="userTextMessage"
+          class="userTextMessage"
+          type="text"
+        />
+      </div>
+      <input type="submit" />
+    </form>
+  </body>
+</html>
