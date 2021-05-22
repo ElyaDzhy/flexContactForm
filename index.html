@@ -27,8 +27,20 @@
 
       <div class="flexContainerMini name">
         <label class="userNameLabel" for="userName">You name</label>
-        <input id="userName" type="text" placeholder="first name" />
-        <input id="userSurname" type="text" placeholder="last name" />
+        <input
+          class="userName"
+          id="userName"
+          type="text"
+          placeholder="first name"
+          pattern="^[a-zA-Z]+$"
+        />
+        <input
+          class="userSurname"
+          id="userSurname"
+          type="text"
+          pattern="^[a-zA-Z]+$"
+          placeholder="last name"
+        />
       </div>
 
       <div class="flexContainerMini mail">
@@ -51,20 +63,24 @@
           id="userPhone"
           type="tel"
           placeholder="000"
-          pattern=""
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          required
         />
         <input
-          class="userPhone"
+          class="userPhone-2"
           id="userPhone"
           type="tel"
           placeholder="000"
-          pattern=""
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
         />
         <input
+          class="userPhone-3"
           id="userPhone"
           type="tel"
           placeholder="0000"
-          pattern=""
+          required
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
         />
       </div>
 
@@ -74,6 +90,7 @@
           name="messageSubject"
           id="messageSubject"
           class="messageSubject"
+          required
         >
           <option value="1">Lorem ipsum dolor sit amet.</option>
           <option value="2">
@@ -106,8 +123,14 @@
           id="userTextMessage"
           class="userTextMessage"
           type="textarea"
-          rows="7"
-          cols="30"
+          rows="2"
+          cols="130"
+          autocorrect="on"
+          lang="en"
+          maxlength="250"
+          wrap="hard"
+          aria-multiline="true"
+          required
         />
       </div>
       <a class="submit" href="#"> Submit form</a>
